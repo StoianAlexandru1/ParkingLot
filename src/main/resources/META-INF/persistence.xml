@@ -7,10 +7,7 @@
     <class>com.park.parkinglot.entity.Car</class>
     <properties>
       <property name="javax.persistence.schema-generation.database.action" value="create"/>
-      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/ParkingLot"/>
-      <property name="javax.persistence.jdbc.user" value="ParkingLotUser"/>
-      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
-      <property name="javax.persistence.jdbc.password" value="ParkingLotPassword"/>
+          
     </properties>
   </persistence-unit>
 </persistence>
