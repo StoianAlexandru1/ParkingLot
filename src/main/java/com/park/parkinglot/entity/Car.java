@@ -32,7 +32,6 @@ public class Car implements Serializable {
     private String parkingSpot;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "USER_KEY")
-    @OneToOne
     private User user;
 
     public String getLicensePlate() {

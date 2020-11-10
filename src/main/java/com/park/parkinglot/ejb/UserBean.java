@@ -28,7 +28,7 @@ public class UserBean {
     public List<UserDetails> getAllUsers() {
         LOG.info("getAllUsers");
         try {
-            Query query = em.createQuery("Select c from User u");
+            Query query = em.createQuery("select u from User u");
             List<User> users = (List<User>) query.getResultList();
             return copyUsersToDetails(users);
         } catch (Exception ex) {
