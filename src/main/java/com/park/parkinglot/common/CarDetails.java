@@ -19,6 +19,10 @@ public class CarDetails implements java.io.Serializable {
         this.username = username;
     }
 
+    public CarDetails(Integer id, String licensePlate, String username) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public Integer getId() {
         return id;
     }
