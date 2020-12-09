@@ -21,8 +21,14 @@
             <div class="col-md-3">
                 ${car.username}
             </div>
+            <div class="col-md-1">
+                <img src="${pageContext.request.contextPath}/Cars/Photos?id=${car.id}" width="48"/>
+            </div>
+             <div class="col-md-3">
+                <a class="btn btn-secondary" href="${pageContext.request.contextPath}/Cars/AddPhoto?id=${car.id}" role="button">Add Photo</a>
+            </div>
             <div class="col-md-3">
-                <a class="btn btn-light" href="${pageContext.request.contextPath}/Cars/Udate?id=${car.id}" role="button">Edit Car</a>
+                <a class="btn btn-light" href="${pageContext.request.contextPath}/Cars/Update?id=${car.id}" role="button">Edit Car</a>
             </div>
         </div>
 
