@@ -52,15 +52,15 @@ public class Cars extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //processRequest(request, response);
-        String[] carIdsAsString = request.getParameterValues("car_ids");
-        if(carIdsAsString != null){
-        List<Integer> carIds = new ArrayList<>();
-        for (String carIdAsString : carIdsAsString){
-            carIds.add(Integer.parseInt(carIdAsString));
+       String[] carIdsAsString = request.getParameterValues("car_ids");
+        if (carIdsAsString != null) {
+            List<Integer> carIds = new ArrayList<>();
+            for (String carIdAsString : carIdsAsString) {
+                carIds.add(Integer.parseInt(carIdAsString));
+            }
+            carBean.deleteCarsByIds(carIds);
         }
-        carBean.deleteCarsByIds(carIds);
-        }
-        response.sendRedirect(request.getContextPath()+ "/Cars");
+        response.sendRedirect(request.getContextPath() + "/Cars");
     }
 
    
